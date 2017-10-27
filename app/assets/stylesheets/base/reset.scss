@@ -1,0 +1,15 @@
+html, header, body, h1, h2, li, form, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font: inherit;
+  color: inherit;
+
+  background: transparent;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
