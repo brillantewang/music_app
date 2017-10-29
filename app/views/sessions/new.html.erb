@@ -1,20 +1,17 @@
-<h2>Sign In!</h2>
+<h2 class="title subtitle">Sign-In</h2>
 
-<% if flash[:errors] %>
-  <% flash[:errors].each do |error| %>
-    <li><%=error%></li>
-  <% end %>
-<% end %>
-<br>
+<%= button_to "Go to sign up!", new_user_url, method: :get %>
 
-<form action="<%=session_url%>" method="post">
-  <label for="email">
-    Email: <input type="text" name="user[email]">
-  </label>
+<form class="credentials-form" action="<%=session_url%>" method="post">
+  <ul class="field">
+    <label for="email">Email</label>
+    <input type="text" name="user[email]">
+  </ul>
 
-  <label for="password">
-    Password: <input type="text" name="user[password]">
-  </label>
+  <ul class="field">
+    <label for="password">Password</label>
+    <input type="text" name="user[password]">
+  </ul>
 
-  <input type="submit" value="Sign in!">
+  <input type="submit" value="Sign-in">
 </form>

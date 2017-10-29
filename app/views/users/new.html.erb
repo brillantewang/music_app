@@ -1,13 +1,17 @@
-<h2>Sign Up!</h2>
+<h2 class="title subtitle">New User</h2>
 
-<form action="<%=users_url%>" method="post">
-  <label for="email">
-    Email: <input type="text" name="user[email]">
-  </label>
+<%= button_to "Go to sign in!", new_session_url, method: :get %>
 
-  <label for="password">
-    Password: <input type="text" name="user[password]">
-  </label>
+<form class="credentials-form" action="<%=users_url%>" method="post">
+  <ul class="field">
+    <label for="email">Email</label>
+    <input type="text" name="user[email]">
+  </ul>
 
-  <input type="submit" value="Sign up!">
+  <ul class="field">
+    <label for="password">Password</label>
+    <input type="text" name="user[password]">
+  </ul>
+
+  <input type="submit" value="Sign-up">
 </form>

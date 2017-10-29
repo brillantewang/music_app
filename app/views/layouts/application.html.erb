@@ -9,18 +9,25 @@
   </head>
 
   <body>
-    <header>
-      <h1>Music App</h1>
-      <nav>
+    <main>
+      <h1 class="title main-logo">Music App</h1>
+      <nav class="main-nav">
         <% if logged_in? %>
-        <%= button_to "Log Out", session_url, method: :delete %>
-        <br>
-        <% else %>
-        <%= button_to "Sign In", new_session_url, method: :get %>
-        <%= button_to "Sign Up", new_user_url, method: :get %>
+        <%= button_to "Take me Home", bands_url, method: :get %>
+        <div class="login-status">
+          <p>Logged in as: <%= current_user.email %></p>
+        </div>
+        <%= button_to "Sign Out", session_url, method: :delete %>
         <% end %>
-      <nav>
-    </header>
+      </nav>
     <%= yield %>
+
+    <% if flash[:errors] %>
+      <% flash[:errors].each do |error| %>
+      <li><%=error%></li>
+      <% end %>
+    <% end %>
+    <br>
+    </main>
   </body>
 </html>

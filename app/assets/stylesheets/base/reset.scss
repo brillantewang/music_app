@@ -1,6 +1,7 @@
-html, header, body, h1, h2, li, form, label {
+html, header, body, ul, h1, h2, li, form, label {
   margin: 0;
   padding: 0;
+  -webkit-padding: 0;
   border: 0;
 
   font: inherit;
@@ -12,4 +13,14 @@ html, header, body, h1, h2, li, form, label {
 button,
 input[type="submit"] {
   cursor: pointer;
+  border-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
 }

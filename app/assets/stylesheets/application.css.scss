@@ -13,4 +13,10 @@
  */
 
  @import "base/reset.scss";
- @import "components/header.scss"
+ @import "base/layout.scss";
+ @import "components/main_nav.scss";
+ @import "components/bands.scss";
+ @import "components/credentials.scss";
+
+ // @import "components/header.scss";
+ // @import "components/bands.scss"

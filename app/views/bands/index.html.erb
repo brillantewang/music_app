@@ -1,0 +1,8 @@
+<h2 class="title subtitle">Bands</h2>
+<section class="band-options">
+  <% @bands.each do |band| %>
+      <button class="main-button" type="button"><%= band.name %></button>
+  <% end %>
+</section>
+
+<p><%= link_to "New band", new_band_url %></p>

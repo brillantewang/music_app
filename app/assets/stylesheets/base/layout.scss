@@ -1,0 +1,46 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  height: 100%;
+  background-color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #463a2f;
+  width: 80%;
+  border-left: 5px gray solid;
+  border-right: 5px gray solid;
+}
+
+a, input[type="submit"] {
+  font-size: 15px;
+  padding: 5px;
+  background-color: rgb(134, 208, 224);
+  border-radius: 7px;
+}
+
+.title {
+  font-family: impact;
+  color: yellow;
+  text-transform: uppercase;
+}
+
+.main-logo {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: #26a99f;
+  margin-bottom: 20px;
+}
